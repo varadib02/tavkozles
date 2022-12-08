@@ -1,4 +1,4 @@
-let mybutton = document.getElementById("btn-back-to-top");
+let mybutton = document.getElementById("gomb");
 
 window.onscroll = function () {
   scrollFunction();
