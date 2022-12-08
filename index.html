@@ -9,22 +9,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+
+  </header>
       <nav id="navbar-example2" class="navbar navbar-dark bg-dark px-3">
         <a class="navbar-brand" href="#">Informatika és távközlés</a>
         
         <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link bg-dark link-light" href="#scrollspyHeading1">Cisco</a>
-          </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle-split link-light " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false ">Cisco Packet Tracer</a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <li><a class="dropdown-item text-light" href="#scrollspyHeading2">Cisco Packet Tracer <br> 8.1.1</a></li>
-              <li><a class="dropdown-item text-light" href="#scrollspyHeading3">IP</a></li>
-              <li><a class="dropdown-item text-light" href="#scrollspyHeading4">VLSM</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item text-light" href="#scrollspyHeading5">DHCP</a></li>
-            </ul>
+            <a class="nav-link dropdown-toggle-split link-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="true">Menu 
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> </span>
+              </button>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="#scrollspyHeading1">Cisco Packet Tracer</a>
+                <a class="nav-link" href="#scrollspyHeading2">IP</a>
+                <a class="nav-link" href="#scrollspyHeading3">VLSM</a>
+                <a class="nav-link" href="#scrollspyHeading4">DHCP</a>
+              </div>
           </li>
         </ul>
       </nav>
@@ -36,20 +40,16 @@
               </div>
             </div>
           </div>
-
-          <button type="button" 
-          class="btn btn-danger btn-floating btn-lg" 
-          id="btn-back-to-top">
-          <i class="fas fa-arrow-up"></i>
-          </button>
           
-        <h1 id="scrollspyHeading2">Cisco Packet Tracer 8.1.1</h1>
-        <img class="packet" src="img/packettracer.webp" alt="" srcset="">
+        <h1 id="scrollspyHeading1">
+          <a class="hlink" href="https://www.computernetworkingnotes.com/ccna-study-guide/download-packet-tracer-for-windows-and-linux.html" target="_blank">
+            <img class="packet" src="img/packettracer.webp" alt="" srcset=""> Cisco Packet Tracer</a></h1>
+        
         <p>A Packet Tracer egy ingyenes hálózati szimulátor eszköz a minősítési vizsgákra való felkészüléshez. Amely megtanítja az eszköz használatának alapjait.</p>
         <a class="link" href="https://learningnetwork.cisco.com/s/packet-tracer-alternative-lab-solutions" target="_blank">Forrás</a>
         <p class="nofloat"></p>
 
-        <h2 id="scrollspyHeading3">IP</h2>
+        <h2 id="scrollspyHeading2">IP</h2>
         <p>Minden eszköznek van egy IP-címe, amely két részből áll: a kliens- vagy gazdagépcímből és a szerver- vagy hálózati címből.</p>
         <p>Az alhálózati maszk felosztja az IP-címet a gazdagép és a hálózati címekre, ezáltal meghatározza, hogy az IP-cím melyik része tartozik az eszközhöz és melyik része a hálózathoz.
             <table class="table text-light">
@@ -108,7 +108,7 @@
         <p>Az átjárónak vagy alapértelmezett átjárónak nevezett eszköz a helyi eszközöket más hálózatokhoz köti.</p>
         <p> Ez azt jelenti, hogy amikor egy helyi eszköz információt szeretne küldeni egy másik hálózat IP-címén lévő eszköznek, először elküldi a csomagjait az átjárónak, amely azután továbbítja az adatokat a helyi hálózaton kívüli célállomásra.</p></p>
         
-        <h2 id="scrollspyHeading4">VLSM</h2>
+        <h2 id="scrollspyHeading3">VLSM</h2>
         
         <p>Azaz alhálozatra való bontás.</p>
         <p>Pl.: Van egy 192.168.1.0 hálozat és két lan az egyikbe kell 10 eszköz a másikba 20.</p>
@@ -145,7 +145,7 @@
         </table>
 
 
-        <h2 id="scrollspyHeading5">DHCP</h2>
+        <h2 id="scrollspyHeading4">DHCP</h2>
         <p>A DHCP szerver-kliens alapú protokoll, nagy vonalakban a kliensek által küldött DHCP-kérésekből, és a szerver által adott DHCP-válaszokból áll.</p>
         <p>A DHCP-vel dinamikusan oszthatóak ki IP-címek, tehát a hálózatról lecsatlakozó számítógépek IP-címeit megkapják a hálózatra felcsatlakozó számítógépek, ezért hatékonyabban használhatóak ki a szűkebb címtartományok.</p>
 
@@ -158,6 +158,12 @@
 <a class="link" href="https://hu.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol" target="_blank"><img class="rounded-circle wiki" src="img/w.png" alt=""> Forrás</a>
 <p class="nofloat"></p>
 
+        <button type="button" 
+          class="btn btn-floating btn-lg" 
+          id="gomb">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      <p class="end"></p>
 </div>
 <footer class="bg-dark container-fluid">
   Készítette: Váradi Barnabás és Gitt Dávid
